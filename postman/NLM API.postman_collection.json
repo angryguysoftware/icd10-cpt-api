@@ -1,0 +1,46 @@
+{
+	"info": {
+		"_postman_id": "f61f1200-5b70-4c0f-865e-7f057d49a09a",
+		"name": "NLM API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "42533611"
+	},
+	"item": [
+		{
+			"name": "search by term",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BASE_URL}}/{{VERSION_NUMBER}}/search?sf=code,name&terms=tuberc&count=20&offset=1",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"{{VERSION_NUMBER}}",
+						"search"
+					],
+					"query": [
+						{
+							"key": "sf",
+							"value": "code,name"
+						},
+						{
+							"key": "terms",
+							"value": "tuberc"
+						},
+						{
+							"key": "count",
+							"value": "20"
+						},
+						{
+							"key": "offset",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

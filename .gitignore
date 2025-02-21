@@ -25,3 +25,5 @@ go.work.sum
 .env
 
 postman/.DS_Store
+
+icd10-cpt-api
